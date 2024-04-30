@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualLightBox>
+    <Gallery version="2.5">
+        <Settings>
+            <AppName>WOW Slider</AppName>
+            <AppUrlS>WOWSlider.com</AppUrlS>
+            <AppVersion>9.0</AppVersion>
+            <AutoPlay>false</AutoPlay>
+            <AutoPlayVideo>false</AutoPlayVideo>
+            <Captions>true</Captions>
+            <CaptionsEffect>parallax</CaptionsEffect>
+            <Controls>true</Controls>
+            <FontSize>13</FontSize>
+            <FullScreen>false</FullScreen>
+            <GalleryName>galeria</GalleryName>
+            <GallerySuffix>1</GallerySuffix>
+            <HtmlCharset>UTF-8</HtmlCharset>
+            <ImageAspectRatio>true</ImageAspectRatio>
+            <ImageEffect>basic</ImageEffect>
+            <ImageFillColor>#5e81b4</ImageFillColor>
+            <ImageHeight>536</ImageHeight>
+            <ImageQuality>90</ImageQuality>
+            <ImageShrink2>true</ImageShrink2>
+            <ImageStretch>true</ImageStretch>
+            <ImageTemplate>C:/Program Files (x86)/WOW Slider/templates/backgnd/cursive/</ImageTemplate>
+            <ImageTemplateName>Cursive</ImageTemplateName>
+            <ImageWidth>800</ImageWidth>
+            <Images>true</Images>
+            <JoomlaType>2.5</JoomlaType>
+            <OneLoop>false</OneLoop>
+            <OrderRandom>false</OrderRandom>
+            <PlayPause>false</PlayPause>
+            <Preloader>false</Preloader>
+            <PublishFileName>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/wowslider.html</PublishFileName>
+            <PublishIndex>wowslider.html</PublishIndex>
+            <PublishPath>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria</PublishPath>
+            <PublishPreview>true</PublishPreview>
+            <PublishType>file</PublishType>
+            <RelativePath>false</RelativePath>
+            <ShowBullets>1</ShowBullets>
+            <ShowControls>false</ShowControls>
+            <ShowTooltips>1</ShowTooltips>
+            <SizeStyle>1</SizeStyle>
+            <SlideshowDelay>20</SlideshowDelay>
+            <SlideshowDuration>20</SlideshowDuration>
+            <SoundEnable>0</SoundEnable>
+            <SoundFileName></SoundFileName>
+            <StopOnHover>false</StopOnHover>
+            <SwipeSupport>2</SwipeSupport>
+            <TemplateColor>#ffffff</TemplateColor>
+            <TemplateFont>Pacifico</TemplateFont>
+            <TemplateName>cursive</TemplateName>
+            <ThumbAlign>bottom</ThumbAlign>
+            <ThumbFormat>jpg</ThumbFormat>
+            <ThumbHeight>48</ThumbHeight>
+            <ThumbQuality>90</ThumbQuality>
+            <ThumbWidth>0</ThumbWidth>
+            <Thumbnails>false</Thumbnails>
+            <TooltipPos>bottom</TooltipPos>
+            <noFrame>0</noFrame>
+        </Settings>
+        <Images RelativePath="false">
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/103.jpg</url>
+                <usertarget>_self</usertarget>
+                <filesize>54404</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/103b.jpg</url>
+                <filesize>57543</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/103c.jpg</url>
+                <filesize>29534</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/105.jpg</url>
+                <filesize>31234</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/112.jpg</url>
+                <filesize>28532</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/112b.jpg</url>
+                <filesize>40981</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/114.jpg</url>
+                <filesize>194421</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/bar.jpg</url>
+                <filesize>227911</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/bar2.jpg</url>
+                <filesize>5217083</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/cartelposada.jpg</url>
+                <filesize>123048</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/comedor_abajo.jpg</url>
+                <filesize>5088080</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/comedor2.jpg</url>
+                <filesize>265213</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/entrada .jpg</url>
+                <filesize>220734</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/jardin.jpg</url>
+                <filesize>104284</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/jardin2.jpg</url>
+                <filesize>91494</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/jardin3.jpg</url>
+                <filesize>310383</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/patio.jpg</url>
+                <filesize>223689</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/patio2.jpg</url>
+                <filesize>187317</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/patio3.jpg</url>
+                <filesize>99265</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/patioO.jpg</url>
+                <filesize>223689</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/salon de las habitaciones.jpg</url>
+                <filesize>5904847</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/salon de las habitaciones2.jpg</url>
+                <filesize>5882596</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/terraza trasera.jpg</url>
+                <filesize>276160</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/ecuevas/Desktop/Posada la Gándara/Nueva_Web/galeria/terrazadelt.jpg</url>
+                <filesize>116038</filesize>
+            </Image>
+        </Images>
+    </Gallery>
+</VisualLightBox>

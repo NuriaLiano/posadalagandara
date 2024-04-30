@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    
+	<meta name="author" content="RuralGest - iCubel - MisterPlan">
+	<meta name="description" content="">
+	<meta name="keywords" content="misterplan,ruralgest,icubel">
+    <meta http-equiv="Content-Language" content="es"/>
+    <meta name="distribution" content="global"/>
+    <meta name="Robots" content="all"/>
+	    
+    <!-- Control de Zoom para Mobile -->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    
+	<title>Reserva Online</title>
+	
+	<style type="text/css">
+		.elp_body_V3
+		{
+			background-color:#ffffff;
+			font-size: 15px !important;
+		    font-family: Arial, Helvetica, sans-serif !important;
+			margin-top: 0px;
+			
+			
+			background-size: 100%
+			padding: 0px;
+			margin: 0px;
+			border: 0px;
+		}
+		
+		.elp_ancho_total {
+			width: 100%;
+		}
+		
+		.elp_capa_izq {
+			float:left
+		}
+		
+		.elp_capa_der {
+			float:right;
+		}
+
+		.elp_mrp_contenedor
+		{
+			width: 100%;
+			max-width: 1300px;	
+			margin: auto;
+		}	
+
+		.elp_mrp_contenedor .elp_header_V4 {
+		    padding-top: 0px;
+			background-color: #FFFFFF;
+			color: #fff;
+		    border-bottom: 0px;
+		    /*position: fixed;*/
+		    float:left;
+		    width: 100%;
+		    z-index: 100;
+		    max-width: 1300px;
+		
+		}		
+
+		.elp_mrp_contenedor .elp_cabecera_logo_V4 {
+			background-color: #FFFFFF;
+		}	
+		
+		.elp_mrp_contenedor .elp_cabecera_logo{
+			/*margin-top: 7px;*/
+		}	
+
+		.elp_mrp_contenedor .elp_nombre_cabecera {
+			background-color: #ffffff;
+			
+			width: 100%;
+			
+			overflow: hidden;
+		}
+		
+		.elp_mrp_contenedor .elp_nombre_cabecera_TXT1 {
+			padding-left: 25px;
+			padding-top: 20px;
+			color: #da7e05;
+			font-size: 24px;
+			font-weight: bold;
+			font-family: Arial;
+		}
+		
+		.elp_mrp_contenedor .elp_nombre_cabecera_TXT2 {
+			padding-left: 25px;
+			margin-top: -4px;
+			color: #fff;
+			font-size: 16px;
+			font-weight: normal;
+			font-family: Arial;
+		}
+
+		.elp_mrp_contenedor .elp_ico_compartir {
+			background-image: none !important;
+			background-position:6px !important; 
+			width: 42px !important;
+			height: 36px !important;
+			padding-top: 50px;
+			padding-left: 11px !important;
+		}
+		
+		.elp_mrp_contenedor .elp_btn_ver {
+			width: 117px !important; 
+			height: 45px !important; 
+			margin-bottom: 10px !important; 
+			font-size: 18px !important; 
+			line-height: 45px !important;
+		}
+		
+		
+		.elp_mrp_contenedor .elp_logo_pie {
+			padding-bottom: 20px;
+			border-bottom: 1px solid #888;
+			margin-bottom: 20px;
+		}	
+		
+		.elp_lista_logos_pie {
+			text-align: center;
+			margin-top: -10px;
+		}
+		
+		.elp_mrp_contenedor .elp_capa_volver_V4 {
+			background-color: #609cd5; 
+			float: left;
+			width: 100%;			
+			height: 40px;
+			z-index: 20;
+			
+			/*background-image: URL
+			background-position: top left;
+			background-repeat: no-repeat;*/
+		}
+		
+		.elp_capa_sustituye_contactar {
+		    height: 0px;
+		}
+		
+		.elp_bloque_pie {
+			padding-top: 25px;
+		    padding-bottom: 30px;
+		    background-color: #ffffff;
+		    color: white;
+		    width: 100%;
+		    max-width: 1300px;
+		    margin: auto;
+		    height: 100px;
+		}
+		
+		.elp_espacio_izq_5 {
+			margin-left: 5px;
+		}
+		
+		.elp_rext_centrado_1 {
+		    width: 100%;
+		    max-width: 1200px;
+		    margin: auto;
+			margin-top: 0px;
+		}
+		
+		.elp_botonera_resultados {
+		    width: 0%;
+		    height: 13px;
+		    padding-top: 2px;
+		    margin: auto;
+		    max-width: 888px;
+		    z-index: 26;
+		    text-align: center;
+		}
+		
+		.elp_Contenido {
+			float: left;
+			width: 100%;
+			background-color: #fff;
+		}
+			
+		.elp_imagen_cabecerea {
+			
+		}		
+		
+		.RGM2_ficha_y_texto {
+			padding-top: 10px !important;
+		}
+			
+		.elp_banderas {
+			text-align: center;
+			margin-top: 9px;
+			margin-right: 3%;
+		}
+
+		@media all and (max-width: 480px)
+		{	
+			.elp_mrp_contenedor .elp_capa_volver_V4 {
+				top: 54px; 
+				
+			}	
+
+			.elp_nombre_cabecera {
+				/*height: 54px !important;*/
+			}
+			
+			.elp_imagen_cabecerea {
+				/*height: 80% !important;*/
+			    margin-top: 0% !important;
+			    margin-left: 0% !important;
+				width: 100%;
+			}
+			
+			.elp_mrp_contenedor .elp_nombre_cabecera {
+    			background-color: #0E205A;
+			    width: 100%;
+			    overflow: hidden;
+			  
+			}
+			
+			.elp_mrp_contenedor .elp_cabecera_logo_V4 {
+				width: 100%;
+				/*height: 43px;*/
+			}
+				
+			.elp_capa_sustituye_contactar {
+				height: 30px !important;
+			}
+			
+			.elp_mrp_contenedor .elp_header_V4 {
+				padding-top: -0px !important;
+			    padding-bottom: 0px !important;
+			    height: 55px !important;
+				/*position: fixed;*/
+				float: left;!important;	
+			}
+			
+			.elp_mrp_contenedor .elp_nav_V4 {
+				height: 100px !important;
+				width: 100% !important;
+				overflow: hidden;
+			}
+			
+			.elp_bloque_pie {
+				padding-top: 5px;
+			    padding-bottom: 0px;
+			    background-color: #ffffff;
+			    color: white;
+			    width: 100%;
+			    max-width: 1300px;
+			    margin: auto;
+			    height: 70px;
+			}
+			
+			.RGM2_ficha_y_texto {
+				margin-top: 0px !important;			
+			}
+			
+			.mrp_contenido_sincabecera_V5 {
+				padding-top: 0px !important;
+			}
+			
+			.rspv_imagen_ficha_V5 {
+				margin-top: 0px !important;
+			}
+			
+		} /* /Fin Mobile */
+	</style>
+	
+		<script>
+		function MrPlan_changeLang(idioma)
+		{
+			var ruta_o=document.location.href;
+			ruta_o=ruta_o.replace('id_idioma=','');
+			var partes=ruta_o.split('?');
+			ruta_o=partes[0]+'?'+partes[1]+'&id_idioma='+idioma;
+			document.location.href=ruta_o;
+		}
+	</script>
+	
+</head>
+<body class="elp_body_V3">
+	<!-- mrp_contenedor -->
+	<div id="" class="elp_mrp_contenedor">
+	
+		<!-- Cabecera -->
+		<div class="elp_ancho_total elp_capa_izq">
+			
+			<!-- Imagen -->
+			<div class="elp_ancho_total elp_cabecera_logo elp_cabecera_logo_V4">
+				<div class="elp_ancho_total elp_ancho_total elp_nombre_cabecera">
+					<a href="https://www.posadalagandara.com/" target="_self" style="text-decoration: none;">
+						<img class="elp_imagen_cabecerea" border="0" src="logo.png">
+					</a>
+				</div>
+			</div>
+			
+			<!-- Boton cerrar -->
+			<div class="elp_capa_volver_V4">
+				<div class="elp_rext_centrado_1 ">
+					<div class="elp_capa_izq elp_ancho_total elp_botonera_resultados" style="padding-bottom: 4px;">
+						<div class="elp_capa_izq elp_espacio_izq_5" onclick="window.history.back();">
+							<img border="0" src="https://www.ruralgest.net/experiencias/images/atras_redondo.png" height="35">
+						</div>				
+					</div>
+				</div>
+				<div class="elp_banderas">
+					<a href="javascript:MrPlan_changeLang(0)"><img width="32" height="21" alt="Espa�ol" src="https://www.mrplan.es/experiencias/images/banderas/V3/bandera_0_blanco.png"></a>
+					<a href="javascript:MrPlan_changeLang(1)"><img width="32" height="21" alt="English" src="https://www.mrplan.es/experiencias/images/banderas/V3/bandera_1_blanco.png"></a>
+					<a href="javascript:MrPlan_changeLang(3)"><img width="32" height="21" alt="Fran�ais" src="https://www.mrplan.es/experiencias/images/banderas/V3/bandera_3_blanco.png"></a>
+					<a href="javascript:MrPlan_changeLang(2)"><img width="32" height="21" alt="Portugu�s" src="https://www.mrplan.es/experiencias/images/banderas/V3/bandera_2_blanco.png"></a>
+					<a href="javascript:MrPlan_changeLang(6)"><img width="32" height="21" alt="Catal�" src="https://www.mrplan.es/experiencias/images/banderas/V3/bandera_6_blanco.png"></a>
+					<a href="javascript:MrPlan_changeLang(7)"><img width="32" height="21" alt="Galego" src="https://www.mrplan.es/experiencias/images/banderas/V3/bandera_7_blanco.png"></a>
+					<a href="javascript:MrPlan_changeLang(5)"><img width="32" height="21" alt="Deutsch" src="https://www.mrplan.es/experiencias/images/banderas/V3/bandera_5_blanco.png"></a>
+					<a href="javascript:MrPlan_changeLang(8)"><img width="32" height="21" alt="Euskera" src="https://www.mrplan.es/experiencias/images/banderas/V3/bandera_8_blanco.png"></a>
+		
+				</div>
+			</div><!-- /Boton cerrar -->
+			
+		</div><!-- /Cabecera -->
+					
+		<!-- Carrousel de fotos V2 -->
+		<div class="mrp_capa_pasafoto_V2_INC elp_ancho_total elp_capa_izq" id_elemento=583636 tipo_elemento="1" style="text-align: center; vertical-align: middle;"></div>	
+		
+		<!-- Contenido -->
+		<div id="rpsv_IncWidgetFicha" style="width: 100%; float: left;">
+		<script type="text/javascript" id_elemento="583636" tipo_elemento="1" idw="3835" w_type="ficha" w_contenido="simple" w_param="getURL" paramHash="c3be02473fdae350513c04f99fefc5a3f788d385" src="https://www.mrplan.io/experiencias/modulos/TExpReverse/lib/TExpReverseInc.php?id_casa=583636&idw=3835&paramHash=c3be02473fdae350513c04f99fefc5a3f788d385"></script>
+		</div><!-- /Contenido -->
+		
+		<!-- Pie -->
+		<div class="elp_capa_izq elp_ancho_total">
+			<div class="elp_bloque_pie">
+				<!-- Logos Partners -->
+				<div class="elp_lista_logos_pie elp_capa_izq elp_ancho_total">
+					<img border="0" src="logo2.png" align="middle" width="150px" alt="Logotipo Mi web" title="Logotipo Mi web">
+				</div><!-- Logos Partners -->
+			</div>
+		</div><!-- Pie -->
+		
+	</div><!-- /mrp_contenedor -->
+</body>
+</html>
