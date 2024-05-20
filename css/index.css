@@ -1,0 +1,401 @@
+#main-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+/********* HEADER *********/
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2%;
+    box-sizing: border-box;
+}
+
+.left-header #logo{
+    width: 15%;
+}
+
+.right-header{
+    color: aliceblue;
+}
+
+.main-text{
+    width: 100%;
+    height: 60vh;
+}
+
+.container-btns{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20%;
+}
+
+.index-btns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 5%;
+}
+
+.arrows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.arrows svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+    animation: bounce 3s infinite;
+}
+
+.arrows svg:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(10px);
+    }
+    60% {
+        transform: translateY(5px);
+    }
+}
+
+/*********** ABOUT US ***********/
+
+#about-us{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    padding-bottom: 3%;
+}
+
+#about-us #container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5%;
+    gap: 5%;
+}
+
+#about-us #container #text{
+    width: 45%;
+}
+
+#slider {
+    position: relative;
+    width: 60%;
+    height: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.image-container {
+    display: flex;
+    width: 100%; /* Ancho suficiente para contener todas las imágenes */
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.slider-nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.slider-nav button svg {
+    width: 40px;
+    height: 40px;
+    stroke: white;
+    stroke-width: 2;
+    fill: none;
+}
+
+.slider-nav button:hover svg {
+    stroke-width: 3;
+}
+
+/***************** GROUPS ROOMS *****************/
+#groups-rooms{
+    width: 100%;
+    height: 70vh;
+    background-image: url(../img/darkened_image.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#groups-rooms h2, #groups-rooms p{
+    color: white;
+}
+
+.rooms {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-groups-rooms {
+    width: 20%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-groups-rooms:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-groups-rooms::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15); /* Filtro negro con opacidad */
+    z-index: 1; /* Sitúa la capa oscura por encima de la imagen de fondo */
+    border-radius: 5px;
+}
+  
+.card-groups-rooms h3 {
+    font-family: 'Aero Matics Stencil';
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em; /* Aumenta el tamaño de la fuente */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2; /* Sitúa el contenido por encima de la capa oscura */
+    transform: translate(-50%, -50%); /* Centra el h3 horizontal y verticalmente */
+}
+  
+.card-groups-rooms button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 10px;  /* Asegura que el botón esté en la parte inferior */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el botón horizontalmente */
+    z-index: 2;
+}
+  
+.card-groups-rooms button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card-groups-rooms button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+  
+#standard {
+    background-image: url('../img/estandar01.jpg');
+}
+  
+#combos {
+    background-image: url('../img/combo01.jpg');
+}
+  
+#apartment {
+    background-image: url('../img/apartamentos01.jpg');
+}
+
+/***************** FOOTER *****************/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 30vh;
+}
+
+footer img{
+    width: 5%;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.legal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5%;
+}
+.autores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 80%;
+}
+
+.autores a, .info a{
+    color: rgb(113, 182, 48);
+}
+
+/*************** MEDIA QUERIES ***************/
+@media (max-width: 768px) {
+    header {
+        align-items: center;
+        padding-bottom: 10%;
+    }
+
+    .left-header #logo {
+        width: 30%;
+    }
+
+    .right-header {
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    .main-text {
+        height: 60vh;
+    }
+
+    .container-btns {
+        height: 20vh;
+        gap: 10%;
+    }
+
+    .index-btns {
+        align-items: center;
+        gap: 10%;
+    }
+
+    #about-us {
+        width: 100vw;
+        padding: 5% 2%;
+        height: 100vh;
+    }
+
+    #about-us #container {
+        flex-direction: column;
+    }
+
+    #about-us #container #text {
+        width: 100%;
+        text-align: justify;
+    }
+
+    #slider {
+        width: 100%;
+        height: 300px; /* Ajustar la altura del slider para dispositivos móviles */
+    }
+
+    .image-container {
+        flex-direction: row;
+        width: 300%; /* Ajuste del ancho total del contenedor de imágenes en móviles */
+    }
+
+    .image-container img {
+        width: 100%;
+    }
+
+    #groups-rooms {
+        height: 100vh;
+        padding: 5% 2%;
+    }
+
+    .rooms {
+        flex-direction: column;
+        gap: 20px;
+        height: 100vh;
+    }
+
+    .card-groups-rooms {
+        width: 80%;
+        height: 100%;
+    }
+
+    footer img {
+        width: 10%;
+        
+    }
+
+    .legal {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .autores {
+        font-size: 100%;
+    }
+}

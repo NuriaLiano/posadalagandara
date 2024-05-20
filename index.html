@@ -3,24 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Posada La Gándara</title>
-    <style>
-        #slider {
-          position: relative;
-          width: 500px; /* Ancho del slider */
-          height: 300px; /* Altura del slider */
-          overflow: hidden;
-        }
-        .image-container {
-          display: flex;
-          width: 2000px; /* Ancho suficiente para contener todas las imágenes */
-        }
-        .image-container img {
-          width: 500px;
-          height: 300px;
-          transition: transform 0.5s ease;
-        }
-      </style>
   </head>
   <body>
     <main>
@@ -35,58 +20,105 @@
         </div>
       </header>
       <img src="img/index.jpg" alt="entrada de la posada de la gandara" id="main-img" />
-      <section class="index-btns">
-        <input type="button" value="Ver habitaciones" />
-        <input type="button" value="Reservar" />
+      <section class="main-text"></section>
+      <section class="container-btns">
+        <section class="index-btns">
+          <!-- <button type="button" value="Ver habitaciones" class="general-btn"><a href="#rooms"></a> -->
+          <button type="button" value="Reservar" class="general-btn"><a href="reservas/reservas.html">Reservar</a></button>
+          <button type="button" value="Reservar" class="general-btn"><a href="tel:+34618277110">Llamar</a></button>
+        </section>
+        <div class="arrows">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18l-6-6h12z"/></svg>
+        </div>
       </section>
     </main>
     <section id="about-us">
-        <h2>Descubre sobre La Gándara</h2>
-      <article id="text"></article>
-      <article id="slider">
-        <div class="image-container">
-          <img src="img/img2.jpg" alt="Foto 1" />
-          <img src="img/img3.jpg" alt="Foto 2" />
-          <img src="img/img4.jpg" alt="Foto 3" />
-          <img src="img/img5.jpg" alt="Foto 4" />
-        </div>
-      </article>
+      <h2>Descubre sobre La Gándara</h2>
+      <div id="container">
+        <article id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptas numquam, consequuntur tenetur ex praesentium, odit rerum impedit labore natus voluptates at dolorum iusto est incidunt, dolore voluptate illum suscipit quam ab cum. Reprehenderit nulla facere, nemo tempore animi ex vel, eum quia explicabo architecto expedita, nam natus similique. Minima!</article>
+        <article id="slider">
+          <div class="image-container">
+            <img src="img/slider/img2.jpg" alt="Foto 1" />
+            <img src="img/slider/img4.jpg" alt="Foto 3" />
+            <img src="img/slider/img5.jpg" alt="Foto 4" />
+            <img src="img/slider/img6.jpg" alt="Foto 4" />
+            <img src="img/slider/img7.jpg" alt="Foto 4" />
+          </div>
+          <div class="slider-nav">
+            <button id="prev">
+              <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button id="next">
+              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </article>
+      </div>
+      
       <script>
         let currentIndex = 0;
         const images = document.querySelectorAll('.image-container img');
         const totalImages = images.length;
-      
+
+        function updateSliderPosition() {
+          const xPosition = -currentIndex * 100; // Ajuste del ancho de cada imagen
+          document.querySelector('.image-container').style.transform = `translateX(${xPosition}%)`;
+        }
+
         function nextImage() {
           currentIndex = (currentIndex + 1) % totalImages;
-          const xPosition = currentIndex * -500; // -500 es el ancho de cada imagen
-          document.querySelector('.image-container').style.transform = `translateX(${xPosition}px)`;
+          updateSliderPosition();
         }
-      
+
+        function prevImage() {
+          currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+          updateSliderPosition();
+        }
+
+        document.getElementById('next').addEventListener('click', nextImage);
+        document.getElementById('prev').addEventListener('click', prevImage);
+
         setInterval(nextImage, 3000); // Cambia la imagen cada 3000 ms (3 segundos)
       </script>
     </section>
     <section id="groups-rooms">
-        <article id="standar" class="card-groups-rooms">
+        <h2>Habitaciones</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="rooms">
+          <article id="standard" class="card-groups-rooms">
             <h3>Estandar</h3>
-            <img src="" alt="">
-            <input type="button" value="Ver">
-        </article>
-        <article id="combos" class="card-groups-rooms">
-            <h3>Combo</h3>
-            <img src="" alt="">
-            <input type="button" value="Ver">
-        </article>
-        <article id="apartment" class="card-groups-rooms">
-            <h3>Apartamentos</h3>
-            <img src="" alt="">
-            <input type="button" value="Ver">
-        </article>
+            <button type="button" value="Reservar" class="general-btn"><a href="reservas/reservas.html">Reservar</a></button>
+          </article>
+          <article id="combos" class="card-groups-rooms">
+              <h3>Combo</h3>
+              <button type="button" value="Reservar" class="general-btn"><a href="reservas/reservas.html">Reservar</a></button>
+          </article>
+          <article id="apartment" class="card-groups-rooms">
+              <h3>Apartamentos</h3>
+              <button type="button" value="Reservar" class="general-btn"><a href="reservas/reservas.html">Reservar</a></button>
+          </article>
+        </div>
+        
     </section>
     <section id="activities">
 
     </section>
     <footer>
-
+      <img src="img/logo.png" alt="logo con texto">
+      <!-- <div class="legal">
+        <a href="">Cookies</a>
+        <a href="">Política de privacidad</a>
+        <a href="">Aviso legal</a>
+      </div> -->
+      <div class="info">
+        <p>Cobijón, Udias - Cantabria</p>
+        <p><a href="https://maps.app.goo.gl/NHHo9QAvRnAaGCr8A"> Dónde encontrarnos 📍</a></p>
+      </div>
+      <div class="autores">
+        <p>Copywriter <a href="https://www.linkedin.com/in/angiegomezg/?originalSubdomain=es">Angie Gomez</a></p>
+        <p>Desarrollo web <a href="https://nurialiano.es">Nuria Liaño</a></p>
+        <p>En Cantabria con mucho 💚</p>
+      </div>
     </footer>
 
   </body>
