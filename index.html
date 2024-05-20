@@ -1,26 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Posada La Gándara</title>
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-    <main class="background-image">
-        <div class="info">
-            <h1>Posada La Gándara</h1>
-            <p id="entrada">Desconéctate del mundo y reconéctate con la naturaleza.</p>
-            <div class="ubc">
-                <p>Cobijón - Udías</p>
-            </div>
-            
+    <style>
+        #slider {
+          position: relative;
+          width: 500px; /* Ancho del slider */
+          height: 300px; /* Altura del slider */
+          overflow: hidden;
+        }
+        .image-container {
+          display: flex;
+          width: 2000px; /* Ancho suficiente para contener todas las imágenes */
+        }
+        .image-container img {
+          width: 500px;
+          height: 300px;
+          transition: transform 0.5s ease;
+        }
+      </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="left-header">
+          <img src="img/logo.png" alt="logo de la gandara, representa la historia minera de la zona." id="logo"/>
+          <!-- <h1>La Gándara</h1> -->
         </div>
-        <div class="btns">
-            <button><a href="reservas/reservas.html">Reservar</a></button>
-            <button><a href="tel:+34618277110">Llamar</a></button> 
+        <div class="right-header">
+          <p id="location-normal">Cobijón - Udías</p>
+          <p id="location-small">Cantabria</p>
         </div>
-        
+      </header>
+      <img src="img/index.jpg" alt="entrada de la posada de la gandara" id="main-img" />
+      <section class="index-btns">
+        <input type="button" value="Ver habitaciones" />
+        <input type="button" value="Reservar" />
+      </section>
     </main>
-</body>
+    <section id="about-us">
+        <h2>Descubre sobre La Gándara</h2>
+      <article id="text"></article>
+      <article id="slider">
+        <div class="image-container">
+          <img src="img/img2.jpg" alt="Foto 1" />
+          <img src="img/img3.jpg" alt="Foto 2" />
+          <img src="img/img4.jpg" alt="Foto 3" />
+          <img src="img/img5.jpg" alt="Foto 4" />
+        </div>
+      </article>
+      <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.image-container img');
+        const totalImages = images.length;
+      
+        function nextImage() {
+          currentIndex = (currentIndex + 1) % totalImages;
+          const xPosition = currentIndex * -500; // -500 es el ancho de cada imagen
+          document.querySelector('.image-container').style.transform = `translateX(${xPosition}px)`;
+        }
+      
+        setInterval(nextImage, 3000); // Cambia la imagen cada 3000 ms (3 segundos)
+      </script>
+    </section>
+    <section id="groups-rooms">
+        <article id="standar" class="card-groups-rooms">
+            <h3>Estandar</h3>
+            <img src="" alt="">
+            <input type="button" value="Ver">
+        </article>
+        <article id="combos" class="card-groups-rooms">
+            <h3>Combo</h3>
+            <img src="" alt="">
+            <input type="button" value="Ver">
+        </article>
+        <article id="apartment" class="card-groups-rooms">
+            <h3>Apartamentos</h3>
+            <img src="" alt="">
+            <input type="button" value="Ver">
+        </article>
+    </section>
+    <section id="activities">
+
+    </section>
+    <footer>
+
+    </footer>
+
+  </body>
 </html>
