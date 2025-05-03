@@ -407,3 +407,27 @@ footer a{
         font-size: 100%;
     }
 }
+
+#carta {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .qr-carta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .qr-carta article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .qr-carta img {
+    width: 150px;
+    height: auto;
+    margin-top: 0.5rem;
+  }
